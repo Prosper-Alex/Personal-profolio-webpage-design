@@ -27,6 +27,10 @@ span {
   color: var(--span-color);
 }
 
+.span.blue {
+  color: var(--secondary-color);
+}
+
 .btn {
   display: inline-block;
   /* background-color: #303542; */
@@ -35,6 +39,14 @@ span {
   font-size: 1.6rem;
   text-decoration: none;
   border: 1.5px solid var(--tertiary-color);
+}
+
+.navigation #checkbox {
+  display: none;
+}
+
+.navigation .nav_button {
+  display: none;
 }
 
 /* TYPOGRAPHY */
@@ -90,6 +102,7 @@ span {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.8px solid #777;
+  cursor: pointer;
 }
 
 .navigation ul,
@@ -114,22 +127,27 @@ a {
   list-style: none;
   text-decoration: none;
   font-size: 1.3rem;
-
+  cursor: pointer;
   font-weight: bold;
   gap: 5rem;
 }
 
-.navigation .nav_actions:a {
+.navigation ul.nav_list li a {
+  text-decoration: none;
+}
+.navigation .nav_actions.a {
   gap: 0rem;
 }
 
 .header.center-children {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .header .btn_wrapper {
   text-align: center;
-  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .header .btn_wrapper .btn.blue {
@@ -147,7 +165,7 @@ a {
 @media only screen and (max-width: 1200px) {
   .btn {
     display: inline-block;
-    /* background-color: #303542; */
+
     padding: 1rem 1.5rem;
     border-radius: 20px;
     font-size: 1.6rem;
@@ -170,7 +188,6 @@ a {
   .navigation {
     padding: 3rem 0;
     display: flex;
-
     align-items: center;
     border-bottom: 0.8px solid #777;
   }
@@ -180,25 +197,57 @@ a {
     right: 0;
     gap: 3rem;
     display: flex;
-    width: min(100vw, 30rem);
     height: 100vh;
     padding: 2rem;
+
     position: fixed;
+    cursor: pointer;
     list-style: none;
     font-weight: bold;
     font-size: 1.3rem;
     align-items: center;
     text-decoration: none;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    width: min(100vw, 30rem);
     backdrop-filter: blur(2px);
     transform: translateX(100%);
-    background-color: rgba(20, 101, 255, 0.7);
+    transition: transform 0.3s ease;
+    background-color: rgba(20, 101, 255, 0.8);
   }
 
-  .header .btn_wrapper {
-    text-align: center;
-    gap: 3rem;
+  .navigation .nav_button {
+    z-index: 1;
+    display: block;
+    font-size: 3.3rem;
+    background-color: var(--secondary-color);
+    padding: 5px 9px;
+    border-radius: 15px;
+    color: #fff;
+  }
+
+  .navigation .nav_button span {
+    color: #fff;
+  }
+
+  .navigation .nav_button span.close {
+    display: none;
+  }
+
+  .navigation .nav_button span.open {
+    display: flex;
+  }
+
+  .navigation #checkbox:checked ~ .nav_list {
+    transform: translatex(0);
+  }
+
+  .navigation #checkbox:checked ~ .nav_button span.close {
+    display: flex;
+  }
+
+  .navigation #checkbox:checked ~ .nav_button span.open {
+    display: none;
   }
 
   .header .btn_wrapper .btn.blue {
@@ -209,5 +258,50 @@ a {
 
   .header .btn_wrapper .btn.bold {
     font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.8px solid #777;
+  }
+
+  .heading-primary {
+    font-size: 5.5rem;
+  }
+
+  .center-children {
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .heading-primary {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+
+  .center-children {
+    padding-left: 3vw !important;
+    padding-right: 3vw !important;
+  }
+
+  .navigation .nav_button {
+    z-index: 1;
+    display: block;
+    font-size: 2.3rem;
+    background-color: var(--secondary-color);
+    padding: 5px 9px;
+    border-radius: 15px;
+    color: #fff;
+  }
+
+  .header .btn_wrapper {
+    text-align: center;
+    gap: 1rem;
   }
 }
