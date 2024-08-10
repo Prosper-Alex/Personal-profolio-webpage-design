@@ -330,6 +330,72 @@ section.experience .container.border .btn_wrapper {
   align-items: center;
   justify-content: center;
 }
+
+/* MY-WORK */
+section.my-work {
+  padding-bottom: 20rem;
+}
+
+section.my-work .container .textbox-wrapper {
+  display: flex;
+
+  align-items: center;
+  padding: 1.3rem 1rem;
+  margin-top: 3rem;
+  border-bottom: 0.6px solid var(--span-color);
+  border-top: 0.6px solid var(--span-color);
+}
+
+section.my-work .container .textbox-wrapper.active {
+  background-color: #1465ff;
+  border-radius: 15px;
+}
+
+.container .textbox-wrapper .textbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 4;
+}
+
+.container .textbox-wrapper .textbox p {
+  margin: 0;
+}
+
+.digit {
+  font-size: 2.5rem;
+  font-weight: bold;
+  flex: 1;
+}
+
+.active .digit {
+  color: var(--primary-color);
+}
+
+.active .paragraph_small b {
+  font-weight: normal;
+}
+.active span {
+  color: var(--primary-color);
+}
+
+.active .heading-tertiary.bold {
+  color: var(--primary-color);
+  font-size: 2.3rem;
+}
+
+.heading-tertiary.bold {
+  font-size: 2.3rem;
+}
+
+.up-arrow {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.arrow-formard {
+  font-size: 2.5rem;
+}
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1200px) {
@@ -493,6 +559,15 @@ section.experience .container.border .btn_wrapper {
     border: none;
     margin-bottom: 2rem;
   }
+
+  .active .heading-tertiary.bold {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+  }
+
+  .heading-tertiary.bold {
+    font-size: 1.8rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -544,6 +619,30 @@ section.experience .container.border .btn_wrapper {
   .center-children {
     padding-left: 4vw !important;
     padding-right: 4vw !important;
+  }
+
+  .digit {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .active .heading-tertiary.bold {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+  }
+
+  .heading-tertiary.bold {
+    font-size: 1.6rem;
+  }
+  .up-arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: none;
+  }
+
+  .arrow-formard {
+    font-size: 2.5rem;
+    display: none;
   }
 }
 
@@ -641,5 +740,11 @@ section.experience .container.border .btn_wrapper {
     align-items: flex-start;
     align-items: center;
     justify-content: center;
+  }
+
+  .container .textbox-wrapper .textbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
