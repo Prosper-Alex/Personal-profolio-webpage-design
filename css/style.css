@@ -332,9 +332,8 @@ section.experience .container.border .btn_wrapper {
 }
 
 /* MY-WORK */
-section.my-work {
-  padding-bottom: 20rem;
-}
+/* section.my-work {
+} */
 
 section.my-work .container .textbox-wrapper {
   display: flex;
