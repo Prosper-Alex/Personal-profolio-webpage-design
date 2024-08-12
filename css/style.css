@@ -68,7 +68,7 @@ span {
 
 .heading-secondary {
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 550;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -358,8 +358,9 @@ section.my-work .container .textbox-wrapper.active {
   flex: 4;
 }
 
-.container .textbox-wrapper .textbox p {
+.container .textbox-wrapper .textbox .heading-secondardp {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .digit {
@@ -372,9 +373,14 @@ section.my-work .container .textbox-wrapper.active {
   color: var(--primary-color);
 }
 
-.active .paragraph_small b {
-  font-weight: normal;
+.active .paragraph_small {
+  margin-top: 1.5rem;
 }
+
+section.my-work .paragraph_small {
+  margin-top: 1.5rem;
+}
+
 .active span {
   color: var(--primary-color);
 }
@@ -393,9 +399,47 @@ section.my-work .container .textbox-wrapper.active {
   font-weight: bold;
 }
 
+.up-arrow.image {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-display: flex;
+  background-color: var(--secondary-color);
+}
+
 .arrow-formard {
   font-size: 2.5rem;
 }
+
+/* LATEST */
+
+section.latest .container.description {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+}
+
+section.latest .container .composition-1 {
+  position: relative;
+  height: 30rem;
+  width: 40rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+section.latest .container .composition-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.up-arrow.image {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  background-color: var(--secondary-color);
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1200px) {
@@ -507,6 +551,18 @@ section.my-work .container .textbox-wrapper.active {
     padding: 2rem;
     display: flex;
   }
+
+  section.latest .container.description {
+    gap: 1.5rem;
+  }
+
+  section.latest .container .composition-1 {
+    position: relative;
+    height: 25rem;
+    width: 35rem;
+    border-radius: 15px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -567,6 +623,12 @@ section.my-work .container .textbox-wrapper.active {
 
   .heading-tertiary.bold {
     font-size: 1.8rem;
+  }
+
+  section.latest .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
   }
 }
 
@@ -634,6 +696,25 @@ section.my-work .container .textbox-wrapper.active {
   .heading-tertiary.bold {
     font-size: 1.6rem;
   }
+
+  section.latest .container.description {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
+  section.latest .container .composition-1 {
+    position: relative;
+    height: 30rem;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  section.latest .container .composition-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .up-arrow {
     font-size: 1.5rem;
     font-weight: bold;
@@ -746,5 +827,25 @@ section.my-work .container .textbox-wrapper.active {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  .container .textbox-wrapper .textbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 4;
+    width: 100%;
+  }
+
+  .digit {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .active .paragraph_small {
+    margin-top: 1rem;
+  }
+
+  section.my-work .paragraph_small {
+    margin-top: 1rem;
   }
 }
