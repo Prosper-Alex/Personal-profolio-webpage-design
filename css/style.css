@@ -1016,6 +1016,11 @@ section.footer .foot .container-foot .list li {
   section.footer .footer-list .paragraph_small {
     color: #fff;
     width: 80%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  section.footer .footer-list p {
   }
 
   section.footer .icons {
