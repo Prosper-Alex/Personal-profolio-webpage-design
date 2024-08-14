@@ -1030,3 +1030,11 @@ section.footer .foot .container-foot .list li {
     gap: 1rem;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  section.footer .footer-list .paragraph_small {
+    color: #fff;
+    width: 70%;
+    font-size: 1rem;
+  }
+}
