@@ -1012,4 +1012,16 @@ section.footer .foot .container-foot .list li {
     border-bottom: #ffffff 1px solid;
     border-radius: 12px;
   }
+
+  section.footer .footer-list .paragraph_small {
+    color: #fff;
+    width: 80%;
+  }
+
+  section.footer .icons {
+    color: #ffffff;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
 }
