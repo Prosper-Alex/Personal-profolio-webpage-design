@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
   font-family: "Inter Tight", sans-serif;
   background-color: var(--primary-color);
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /* COMPONENTS */
@@ -999,7 +999,7 @@ section.footer .foot .container-foot .list li {
   }
 
   section.footer {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   section.footer input {
