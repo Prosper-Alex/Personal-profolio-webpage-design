@@ -18,7 +18,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Inter Tight', sans-serif;
+  font-family: "Inter Tight", sans-serif;
   background-color: var(--primary-color);
   overflow-x: hidden !important;
 }
@@ -237,12 +237,17 @@ a {
   margin-top: 2rem;
 }
 
-.textbox_column {
+.my-offerings .textbox_column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 3.5rem;
   margin-bottom: 3rem;
   gap: 3rem;
+}
+
+.my-offerings .textbox_column .icon img {
+  height: 100%;
+  width: 100%;
 }
 
 .row {
@@ -252,7 +257,7 @@ a {
   border-radius: 15px;
 }
 
-.icon {
+.textbox_column .row .icon {
   width: 3rem;
   height: 3rem;
   padding: 2.3rem 2.3rem;
@@ -261,8 +266,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #3179fa;
   background-color: #f3f7ff;
+}
+
+.textbox_column .row .icon span {
+  color: var(--secondary-color);
 }
 
 /* EXPERIENCE */
@@ -493,7 +501,7 @@ section.footer input {
 }
 
 section.footer input:visited {
-  content: '&nearr;';
+  content: "&nearr;";
   color: #fff;
 }
 
