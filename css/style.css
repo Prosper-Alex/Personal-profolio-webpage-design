@@ -653,6 +653,10 @@ section.footer .foot .container-foot .list li {
     background-color: rgba(20, 101, 255, 0.8);
   }
 
+  .navigation .nav_list li a {
+    color: #fff;
+  }
+
   .navigation .nav_button {
     z-index: 1;
     display: block;
