@@ -18,7 +18,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   background-color: var(--primary-color);
   overflow-x: hidden !important;
 }
@@ -420,7 +420,7 @@ section.my-work .paragraph_small {
 
 section.latest .container.description {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   margin-bottom: 5rem;
   justify-content: space-between;
 }
@@ -430,20 +430,38 @@ section.latest .container .composition-1 {
   height: 30rem;
   width: 40rem;
   border-radius: 15px;
-  overflow: hidden;
 }
 
 section.latest .container .composition-1 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 16px;
 }
 
-.up-arrow.image {
-  font-size: 1.5rem;
-  font-weight: bold;
+section.latest .container .composition-1 .icon-wrapper {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: inherit;
+}
 
+section.latest .container .composition-1 .icon-wrapper .up-arrow.image {
   background-color: var(--secondary-color);
+  color: var(--primary-color);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  transform: rotate(45deg);
 }
 
 /* FOOTER */
@@ -475,7 +493,7 @@ section.footer input {
 }
 
 section.footer input:visited {
-  content: "&nearr;";
+  content: '&nearr;';
   color: #fff;
 }
 
