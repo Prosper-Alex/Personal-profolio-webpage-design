@@ -4,9 +4,10 @@ A clean, responsive portfolio webpage showcasing skills, projects, and contact i
 
 ## 📸 Screenshots
 
-![Home Page](./assets/homepage.png)  
-![Projects Section](./assets/projects.png)  
-![Contact Form](./assets/contact.png)  
+![Home Page](./assets/screenshots/home.png)  
+![Projects Section](./assets/screenshots/mobile-responsive.png)
+
+<!-- ![Contact Form](./assets/contact.png)   -->
 
 ## 🚀 Live Demo
 
@@ -28,16 +29,16 @@ This personal portfolio webpage is designed to provide a professional and engagi
 
 ## 🛠️ Built With
 
-- HTML5  
-- CSS3 (including Flexbox)  
-- Responsive Design Principles  
+- HTML5
+- CSS3 (including Flexbox)
+- Responsive Design Principles
 
 ## 🌱 What I Learned
 
-- Structuring a responsive layout using Flexbox and media queries  
-- Applying clean, minimalistic design aesthetics  
-- Enhancing UX with hover effects and smooth transitions  
-- Organizing project files for scalability and maintainability  
+- Structuring a responsive layout using Flexbox and media queries
+- Applying clean, minimalistic design aesthetics
+- Enhancing UX with hover effects and smooth transitions
+- Organizing project files for scalability and maintainability
 
 ## 👤 Author
 
