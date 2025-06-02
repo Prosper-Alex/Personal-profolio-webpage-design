@@ -5,7 +5,8 @@ A clean, responsive portfolio webpage showcasing skills, projects, and contact i
 ## 📸 Screenshots
 
 ![Home Page](./assets/screenshots/home.png)  
-![Projects Section](./assets/screenshots/mobile-responsive.png)
+![Projects Section Blog](./assets/screenshots/blog.png)
+![Molie Responsiveness](./assets/screenshots/mobile-responsive.png)
 
 <!-- ![Contact Form](./assets/contact.png)   -->
 
